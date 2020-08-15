@@ -3,9 +3,19 @@
 
 body {
     color: #343434;
+    margin: 0;
+    padding: 0;
 }
 img {
-    width: 300px;
+    width: 100px;
+}
+h2 {
+    margin: 0;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 /* Profile
@@ -18,7 +28,9 @@ header {
 a {
     color: #F7FFF7;
 }
-
+#oclock {
+    padding-left: 10px;
+}
 
 /* Projects
 ---------------------------*/
@@ -34,9 +46,13 @@ a {
     background-color: #003049;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover{
     background-color: rgba(47, 48, 97, 80%);
+}
+.projects img {
+    width: 300px;
 }
 
 /* Work Experience
