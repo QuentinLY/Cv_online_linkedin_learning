@@ -1,6 +1,11 @@
 /* Global styles 
 ---------------------------*/
-
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
     color: #343434;
     margin: 0;
@@ -64,8 +69,19 @@ a {
 .projects .btn:hover{
     background-color: rgba(47, 48, 97, 80%);
 }
+.project-item {
+    overflow: hidden;
+}
+.project-item img{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
 .projects img {
     width: 300px;
+}
+.project-item h3{
+    margin-top: 20px;
 }
 
 /* Work Experience
