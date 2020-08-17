@@ -117,6 +117,12 @@ a {
     margin-block-start: 0;
     color:#8d3f3f
 }
+#dataquest img {
+    width: 80px;
+}
+.iris-sup {
+    margin-top: 30px
+}
 
 /* Contact Information
 ---------------------------*/
