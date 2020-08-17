@@ -31,7 +31,8 @@ h1, h2 {
     font-weight: 400;
 }
 .content-wrap {
-    width: 800px;
+    max-width: 800px;
+    width: 85%;
     margin: 0 auto;
     padding: 60px 0;
 }
@@ -42,7 +43,6 @@ h1, h2 {
 header {
     background-color: #003049;
     color: #F7FFF7;
-    text-align: center;
 }
 a {
     color: #F7FFF7;
@@ -74,8 +74,6 @@ a {
     overflow: hidden;
 }
 .project-item img{
-    float: left;
-    margin-right: 20px;
     margin-top: 20px;
 }
 .projects img {
@@ -92,10 +90,10 @@ a {
     background-color: #FCBF49;
 }
 .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-    border-bottom: 1px dashed #343434
+    border-bottom: 1px dashed #343434;
+}
+.job-item:last-of-type {
+    border-bottom: none;
 }
 .job-title {
     font-weight: bold;
@@ -130,15 +128,52 @@ a {
 footer {
     background-color: #343434;
     color: #F7FFF7;
-    text-align: center;
 }
 .contact-list {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 .contact-list a {
     padding: 15px;
     display: inline-block;
+}
+.contact-list img {
+    width: 50px;
+}
+#linkedin {
+    width: 37px;
+}
+
+/* Responsive
+---------------------------*/
+
+@media screen and (min-width: 850px) {
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+        border-bottom: 1px dashed #343434;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+    }
+    h1, h2 {
+        line-height: 1;
+    }
 }
